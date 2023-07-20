@@ -1,15 +1,11 @@
 {
+    "name": "TARA",
     "version": 2,
-    "builds": [
-        {
-              "src": "run.py",
-            "use": "@vercel/python"
-        }
-    ],
+    "builds": [{
+        "src": "run.py",
+        "use": "@liudonghua123/now-flask"
+    }],
     "routes": [
-        {
-            "src": "(.*)",
-          "dest": "run.py"
-        }
+        { "src": "(.*)", "dest": "run.py" }
     ]
 }
